@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <script src="/build/page_components.js"></script>
+
+</head>
+<body style="margin: 0; color: white">
+
+  <page-background type="image" value="https://firebasestorage.googleapis.com/v0/b/smarttv-7a185.appspot.com/o/bg.jpg?alt=media&token=23eff158-8b49-4b36-b678-46fe4204f3ea">
+
+    <page-layout direction="horizontal">
+      <page-layout direction="vertical" width="30%">
+        This is 30% area
+        <page-layout direction="horizontal">
+         This is a row
+        </page-layout>
+        <page-layout direction="horizontal">
+          <page-layout direction="vertical" width="50%">
+            <page-layout direction="horizontal">
+              <div>
+                TRIAL
+              </div>
+            </page-layout>
+            <page-layout direction="horizontal">
+              Row with 50% width
+            </page-layout>
+            <page-layout direction="horizontal">
+              Row with 50% width
+            </page-layout>
+            <page-layout direction="horizontal">
+              Row with 50% width
+            </page-layout>
+            <page-layout direction="horizontal">
+              Row with 50% width
+            </page-layout>
+          </page-layout>
+          <page-layout direction="vertical" width="50%">
+            Column with 50% width
+          </page-layout>
+        </page-layout>
+      </page-layout>
+      <page-layout direction="vertical" width="70%">
+        This is 70% area
+      </page-layout>
+    </page-layout>
+  </page-background>
+  <!--<page-background type="color" value="#456782"></page-background>-->
+
+
+</body>
+</html>
