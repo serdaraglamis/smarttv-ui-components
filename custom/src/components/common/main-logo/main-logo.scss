@@ -1,0 +1,14 @@
+main-logo {
+  > div {
+    height: 136px;
+    background-color: red;
+
+    .logo {
+      max-width: 136px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+}

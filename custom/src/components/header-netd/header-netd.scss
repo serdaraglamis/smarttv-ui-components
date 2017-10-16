@@ -1,0 +1,88 @@
+header-netd {
+  font-family: 'Roboto', sans-serif;
+
+  > div {
+    position: relative;
+    height: 136px;
+    background-color: red;
+
+    .logo {
+
+    }
+
+    .left-info {
+      float: left;
+      position: relative;
+      height: 100%;
+
+      .text-title {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+      }
+
+      .badge-container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        background-color: #9B0062;
+        padding: 10px;
+        border-radius: 3px;
+      }
+
+      .channel-container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: max-content;
+        image-rounded {
+          > div {
+            float: left;
+          }
+        }
+
+        .text-block {
+          float: left;
+          margin-left: 10px;
+          top: 14px;
+          position: relative;
+
+          .title {
+            font-size: 34px;
+            color: white;
+          }
+          .sub-info {
+            color: #AAAAAA;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .right-info {
+      float: right;
+      position: relative;
+      height: 57px;
+      top: 42px;
+      margin-right: 48px;
+
+      .buttons {
+        position: relative;
+        height: inherit;
+
+        .rounded-button {
+          background: #2C2C2C;
+          padding: 20px 25px;
+          margin-left: 10px;
+          border-radius: 42px;
+          display: inline-block;
+          color: #afb2b4;
+        }
+      }
+
+
+    }
+  }
+}
