@@ -91,3 +91,30 @@ declare global {
   }
 }
 
+import { HeaderNetd as TestComp } from './components/test-comp/test-comp';
+
+interface HTMLTestCompElement extends TestComp, HTMLElement {
+}
+declare var HTMLTestCompElement: {
+  prototype: HTMLTestCompElement;
+  new (): HTMLTestCompElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "test-comp": HTMLTestCompElement;
+  }
+  interface ElementTagNameMap {
+      "test-comp": HTMLTestCompElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "test-comp": JSXElements.TestCompAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface TestCompAttributes extends HTMLAttributes {
+        
+      }
+  }
+}
+

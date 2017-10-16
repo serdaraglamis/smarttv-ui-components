@@ -3,9 +3,8 @@ exports.config = {
   generateDistribution: true,
   bundles: [
     {
-      components: ['image-rounded', 'main-logo']
-    },
-    { components: ['header-netd'] }
+      components: ['image-rounded', 'main-logo', 'header-netd', 'test-comp']
+    }
   ],
   collections: [
     {

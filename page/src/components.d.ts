@@ -4,6 +4,8 @@
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
 
+import '../custom';
+
 import { PageBackground as PageBackground } from './components/page-background/page-background';
 
 interface HTMLPageBackgroundElement extends PageBackground, HTMLElement {

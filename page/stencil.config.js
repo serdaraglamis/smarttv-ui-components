@@ -3,6 +3,11 @@ exports.config = {
   generateDistribution: true,
   bundles: [
     { components: ['page-background', 'page-layout']}
+  ],
+  collections: [
+    {
+      name: '../custom'
+    }
   ]
 };
 
