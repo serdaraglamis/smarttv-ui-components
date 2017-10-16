@@ -11,8 +11,7 @@ export class HeaderNetd {
    };*/
 
   @State() rightBlock: any;
-
-  data: {
+  @Prop() data: {
     logo?: string,
     headerType?: string, // badge, text, channel,
     textInfo?: {
@@ -37,25 +36,25 @@ export class HeaderNetd {
 
 
   componentWillLoad() {
-/*    this.data = {
-      logo: "https://firebasestorage.googleapis.com/v0/b/smarttv-7a185.appspot.com/o/netd.png?alt=media&token=c36b1d77-7c4a-487f-a3cd-7d8cc16d5900",
-      headerType: 'channel',
-      badgeInfo: {
-        text: 'müzik',
-        fontSize: 30,
-        padding: '10px'
-      },
-      textInfo: {
-        fontSize: 40,
-        text: 'Kanallar'
-      },
-      channelInfo: {
-        text: 'Lorem Ipsum',
-        image: 'http://assets.dogannet.tv/img/75/130x130/59b7de0d6300333ba12a7cf3',
-        videoCount: 24,
-        followersCount: 1567
-      }
-    };*/
+    /*    this.data = {
+     logo: "https://firebasestorage.googleapis.com/v0/b/smarttv-7a185.appspot.com/o/netd.png?alt=media&token=c36b1d77-7c4a-487f-a3cd-7d8cc16d5900",
+     headerType: 'channel',
+     badgeInfo: {
+     text: 'müzik',
+     fontSize: 30,
+     padding: '10px'
+     },
+     textInfo: {
+     fontSize: 40,
+     text: 'Kanallar'
+     },
+     channelInfo: {
+     text: 'Lorem Ipsum',
+     image: 'http://assets.dogannet.tv/img/75/130x130/59b7de0d6300333ba12a7cf3',
+     videoCount: 24,
+     followersCount: 1567
+     }
+     };*/
     console.log('The component is about to be rendered', this);
 
     this.getRightBlock();
@@ -105,10 +104,10 @@ export class HeaderNetd {
   @Listen('authEvent')
   getRightBlock(authEvent?) {
     let element: any;
-    if(authEvent) {
-        element = (
-          <div></div>
-        )
+    if (authEvent) {
+      element = (
+        <div></div>
+      )
     } else {
       element = (
         <div class="buttons">

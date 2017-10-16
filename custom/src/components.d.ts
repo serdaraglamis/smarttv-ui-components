@@ -86,6 +86,7 @@ declare global {
   namespace JSXElements {
       export interface HeaderNetdAttributes extends HTMLAttributes {
         
+          data?: any
       }
   }
 }
