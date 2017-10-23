@@ -28,7 +28,7 @@ export class ImageRounded {
     let imageStyle = {
       width: `${this.config.width}px`,
       height: `${this.config.height || this.config.width}px`,
-      borderRadius: `${this.config.width}px`
+      borderRadius: `${this.config.width}px`,
     };
 
     let borderStyle = {
@@ -36,7 +36,8 @@ export class ImageRounded {
       height: `${this.config.height || this.config.width}px`,
       border: `1px solid ${this.config.border && this.config.border.color ? this.config.border.color :  'white'}`,
       borderRadius: `${this.config.width}px`,
-      padding: `${this.config.border && this.config.border.padding ? this.config.border.padding : 5}px`
+      padding: `${this.config.border && this.config.border.padding ? this.config.border.padding : 5}px`,
+      display: 'inline-block'
     };
     return (
       <div style={borderStyle}>

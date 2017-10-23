@@ -1,0 +1,73 @@
+slider-highlight {
+  height: 256px;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  //background-color: blanchedalmond;
+  padding-bottom: 20px;
+  padding-left: 5px;
+
+  > div {
+    .slider-wrapper {
+      .slider-item {
+        display: table-cell;
+        padding-right: 27px;
+
+        &.focus, &:hover {
+          .item-container {
+            border: 4px solid white;
+          }
+        }
+
+        .item-container {
+          width: 455px;
+          height: 256px;
+          position: relative;
+
+          img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+100&0+0,0.71+100 */
+            background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.71) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.71) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.71) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#b5000000', GradientType=0); /* IE6-9 */
+          }
+
+          .text-container {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            max-width: 100%;
+
+            .top-info {
+              font-size: 22px;
+              color: white;
+              padding: 5px 10px;
+            }
+
+            .sub-info {
+              font-size: 16px;
+              padding: 0 10px 10px;
+              .field-left {
+                color: #BCBCBC;
+              }
+              .field-right {
+                color: white;
+                float: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

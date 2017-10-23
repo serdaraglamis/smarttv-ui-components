@@ -8,11 +8,26 @@
   <script src="/build/custom_components.js"></script>
 
 </head>
-<body style="margin: 0">
+<body style="margin: 0;font-family: 'Roboto', sans-serif; overflow: hidden">
 
-  <page-background type="color" value="orange">
+  <page-background type="image" value="https://firebasestorage.googleapis.com/v0/b/smarttv-7a185.appspot.com/o/bg.jpg?alt=media&token=23eff158-8b49-4b36-b678-46fe4204f3ea">
     <page-layout direction="horizontal">
       <test-comp></test-comp>
+    </page-layout>
+    <page-layout direction="horizontal">
+      <page-layout direction="vertical" width="20%">
+        <left-menu></left-menu>
+      </page-layout>
+      <page-layout direction="vertical" width="80%">
+        <page-layout direction="horizontal">
+          <slider-button-categories></slider-button-categories>
+          <slider-playlist-card></slider-playlist-card>
+          <slider-channel-card current-focus="1"></slider-channel-card>
+          <slider-video-card current-focus="1"></slider-video-card>
+          <slider-highlight></slider-highlight>
+          <slider-album-card></slider-album-card>
+        </page-layout>
+      </page-layout>
     </page-layout>
   </page-background>
 

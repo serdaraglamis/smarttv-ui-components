@@ -1,11 +1,12 @@
 page-layout {
-  .horizontal {
+  >.horizontal {
     max-width: 100%;
     display: block;
     overflow: hidden;
   }
 
-  .vertical {
+
+  >.vertical {
     float: left;
     height: 100%;
     position: relative;

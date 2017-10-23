@@ -35,6 +35,34 @@ declare global {
   }
 }
 
+import { LeftMenu as LeftMenu } from './components/common/left-menu/left-menu';
+
+interface HTMLLeftMenuElement extends LeftMenu, HTMLElement {
+}
+declare var HTMLLeftMenuElement: {
+  prototype: HTMLLeftMenuElement;
+  new (): HTMLLeftMenuElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "left-menu": HTMLLeftMenuElement;
+  }
+  interface ElementTagNameMap {
+      "left-menu": HTMLLeftMenuElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "left-menu": JSXElements.LeftMenuAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface LeftMenuAttributes extends HTMLAttributes {
+        
+          image?: string
+      }
+  }
+}
+
 import { MainLogo as MainLogo } from './components/common/main-logo/main-logo';
 
 interface HTMLMainLogoElement extends MainLogo, HTMLElement {
@@ -87,6 +115,177 @@ declare global {
       export interface HeaderNetdAttributes extends HTMLAttributes {
         
           data?: any
+      }
+  }
+}
+
+import { SliderAlbumCard as SliderAlbumCard } from './components/sliders/slider-album-card/slider-album-card';
+
+interface HTMLSliderAlbumCardElement extends SliderAlbumCard, HTMLElement {
+}
+declare var HTMLSliderAlbumCardElement: {
+  prototype: HTMLSliderAlbumCardElement;
+  new (): HTMLSliderAlbumCardElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "slider-album-card": HTMLSliderAlbumCardElement;
+  }
+  interface ElementTagNameMap {
+      "slider-album-card": HTMLSliderAlbumCardElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "slider-album-card": JSXElements.SliderAlbumCardAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface SliderAlbumCardAttributes extends HTMLAttributes {
+        
+          image?: string
+      }
+  }
+}
+
+import { SliderButtonCategories as SliderButtonCategories } from './components/sliders/slider-button-categories/slider-button-categories';
+
+interface HTMLSliderButtonCategoriesElement extends SliderButtonCategories, HTMLElement {
+}
+declare var HTMLSliderButtonCategoriesElement: {
+  prototype: HTMLSliderButtonCategoriesElement;
+  new (): HTMLSliderButtonCategoriesElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "slider-button-categories": HTMLSliderButtonCategoriesElement;
+  }
+  interface ElementTagNameMap {
+      "slider-button-categories": HTMLSliderButtonCategoriesElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "slider-button-categories": JSXElements.SliderButtonCategoriesAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface SliderButtonCategoriesAttributes extends HTMLAttributes {
+        
+          image?: string,
+          currentFocus?: string
+      }
+  }
+}
+
+import { SliderChannelCard as SliderChannelCard } from './components/sliders/slider-channel-card/slider-channel-card';
+
+interface HTMLSliderChannelCardElement extends SliderChannelCard, HTMLElement {
+}
+declare var HTMLSliderChannelCardElement: {
+  prototype: HTMLSliderChannelCardElement;
+  new (): HTMLSliderChannelCardElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "slider-channel-card": HTMLSliderChannelCardElement;
+  }
+  interface ElementTagNameMap {
+      "slider-channel-card": HTMLSliderChannelCardElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "slider-channel-card": JSXElements.SliderChannelCardAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface SliderChannelCardAttributes extends HTMLAttributes {
+        
+          image?: string,
+          currentFocus?: string
+      }
+  }
+}
+
+import { SliderHighlight as SliderHighlight } from './components/sliders/slider-highlight/slider-highlight';
+
+interface HTMLSliderHighlightElement extends SliderHighlight, HTMLElement {
+}
+declare var HTMLSliderHighlightElement: {
+  prototype: HTMLSliderHighlightElement;
+  new (): HTMLSliderHighlightElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "slider-highlight": HTMLSliderHighlightElement;
+  }
+  interface ElementTagNameMap {
+      "slider-highlight": HTMLSliderHighlightElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "slider-highlight": JSXElements.SliderHighlightAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface SliderHighlightAttributes extends HTMLAttributes {
+        
+          image?: string
+      }
+  }
+}
+
+import { SliderPlaylistCard as SliderPlaylistCard } from './components/sliders/slider-playlist-card/slider-playlist-card';
+
+interface HTMLSliderPlaylistCardElement extends SliderPlaylistCard, HTMLElement {
+}
+declare var HTMLSliderPlaylistCardElement: {
+  prototype: HTMLSliderPlaylistCardElement;
+  new (): HTMLSliderPlaylistCardElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "slider-playlist-card": HTMLSliderPlaylistCardElement;
+  }
+  interface ElementTagNameMap {
+      "slider-playlist-card": HTMLSliderPlaylistCardElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "slider-playlist-card": JSXElements.SliderPlaylistCardAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface SliderPlaylistCardAttributes extends HTMLAttributes {
+        
+          image?: string
+      }
+  }
+}
+
+import { SliderVideoCard as SliderVideoCard } from './components/sliders/slider-video-card/slider-video-card';
+
+interface HTMLSliderVideoCardElement extends SliderVideoCard, HTMLElement {
+}
+declare var HTMLSliderVideoCardElement: {
+  prototype: HTMLSliderVideoCardElement;
+  new (): HTMLSliderVideoCardElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "slider-video-card": HTMLSliderVideoCardElement;
+  }
+  interface ElementTagNameMap {
+      "slider-video-card": HTMLSliderVideoCardElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "slider-video-card": JSXElements.SliderVideoCardAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface SliderVideoCardAttributes extends HTMLAttributes {
+        
+          image?: string,
+          currentFocus?: string
       }
   }
 }

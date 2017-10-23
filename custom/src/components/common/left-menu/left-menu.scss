@@ -1,0 +1,52 @@
+left-menu {
+  text-align: left;
+
+  .menu-item {
+    margin-top: 48px;
+    margin-left: 20px;
+
+    &.focus {
+      .menu-text {
+        opacity: 1;
+      }
+    }
+
+    .menu-icon {
+
+    }
+
+    .menu-text {
+      color: white;
+      opacity: 0.4;
+      font-size: 26px;
+
+
+    }
+    .remote-button {
+      top: 10px;
+      position: relative;
+      margin-right: 18px;
+      display: inline-block;
+      float: left;
+      width: 12px;
+      height: 12px;
+      border-radius: 20px;
+
+      &.remote-button-red {
+        background-color: #CC1F00;
+      }
+
+      &.remote-button-green {
+        background-color: #69A000;
+      }
+
+      &.remote-button-orange {
+        background-color: #FF9D00;
+      }
+
+      &.remote-button-blue {
+        background-color: #1B7EB2;
+      }
+    }
+  }
+}
