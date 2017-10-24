@@ -3,7 +3,7 @@ exports.config = {
   generateDistribution: true,
   bundles: [
     {
-      components: ['image-rounded', 'main-logo', 'header-netd', 'test-comp', 'left-menu', 'slider-highlight', 'slider-album-card', 'slider-video-card', 'slider-channel-card', 'slider-playlist-card', 'slider-button-categories']
+      components: ['image-rounded', 'main-logo', 'header-netd', 'test-comp', 'left-menu', 'slider-highlight', 'slider-album-card', 'slider-video-card', 'slider-channel-card', 'slider-playlist-card', 'slider-button-categories', 'videopage-netd']
     }
   ],
   collections: [
