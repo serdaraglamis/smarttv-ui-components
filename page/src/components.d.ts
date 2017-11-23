@@ -30,7 +30,9 @@ declare global {
       export interface PageBackgroundAttributes extends HTMLAttributes {
         
           type?: any,
-          value?: any
+          value?: any,
+          key?: any,
+          gradient?: any
       }
   }
 }

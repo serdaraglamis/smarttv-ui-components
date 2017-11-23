@@ -9,6 +9,8 @@ export class PageBackground {
   @Prop() type: string;
   @Prop() value: string;
   elementStyle: {};
+  @Prop() key?: any;
+  @Prop() gradient?: any;
 
   /**
    * The component will load but has not rendered yet.
@@ -16,18 +18,29 @@ export class PageBackground {
    * This is a good place to make any last minute updates before rendering.
    */
   componentWillLoad() {
-    console.log('The component is about to be rendered', this);
+    // console.log('HEADER * * * * The component is about to be rendered', this);
     this.elementStyle = {
-      background: this.type === 'image' ? `url(${this.value})` : this.value
-    }
+      'background-image': this.type === 'image' ? `url(${this.value})` : this.value
+    };
   }
 
   render() {
-    return (
-      <div style={this.elementStyle}>
-        <slot>
-        </slot>
-      </div>
-    );
+    if(this.gradient === 'true' || this.gradient === true) {
+      return (
+        <div style={this.elementStyle} class="gradient">
+          <div class="gradient">
+            <slot>
+            </slot>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div style={this.elementStyle}>
+          <slot>
+          </slot>
+        </div>
+      );
+    }
   }
 }

@@ -11,7 +11,7 @@ export class PageLayout {
   layoutStyle: {};
 
   componentWillLoad() {
-    console.log('The component is about to be rendered', this.direction, this.width);
+    // console.log('The component is about to be rendered', this.direction, this.width);
     this.direction === 'vertical' ? this.layoutStyle = {
       width: this.width,
       maxWidth: this.width
