@@ -1,0 +1,14 @@
+page-layout {
+  >.horizontal {
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+
+
+  >.vertical {
+    float: left;
+    height: 100%;
+    position: relative;
+  }
+}
