@@ -18,7 +18,8 @@
     "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
-    "@stencil/core": "next"
+    "@stencil/core": "0.0.6-10",
+    "stencil": "0.0.5"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",
@@ -26,11 +27,8 @@
     "@types/jest": "^21.1.1",
     "jest": "^21.2.1"
   },
-  "author": "Ionic Team",
+  "author": "DOGAN TV HOLDING",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
-  },
   "homepage": "https://github.com/ionic-team/stencil",
   "jest": {
     "transform": {

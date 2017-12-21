@@ -3,12 +3,22 @@ exports.config = {
   generateDistribution: true,
   bundles: [
     {
-      components: ['image-rounded', 'main-logo', 'header-netd', 'test-comp', 'left-menu', 'slider-highlight', 'slider-album-card', 'slider-video-card', 'slider-channel-card', 'slider-playlist-card', 'slider-button-categories', 'videopage-netd']
+      components: [
+        'image-rounded',
+        'main-logo',
+        'loading-element',
+        'list-play-card'
+      ]
     }
   ],
   collections: [
     {
       name: '../page'
+    }
+  ],
+  copy: [
+    {
+      src: 'static'
     }
   ]
 };
@@ -16,4 +26,4 @@ exports.config = {
 exports.devServer = {
   root: 'www',
   watchGlob: '**/**'
-}
+};

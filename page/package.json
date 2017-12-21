@@ -1,7 +1,7 @@
 {
   "name": "page_components",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "DOGAN TV HOLDING Custom Web Components Page",
   "main": "dist/collection/index.js",
   "types": "dist/collection/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
@@ -30,11 +30,8 @@
     "type": "git",
     "url": "git+https://github.com/ionic-team/stencil-component-starter.git"
   },
-  "author": "Ionic Team",
+  "author": "DOGAN TV HOLDING",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
-  },
   "homepage": "https://github.com/ionic-team/stencil",
   "jest": {
     "transform": {
