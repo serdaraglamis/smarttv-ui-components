@@ -6,63 +6,67 @@
 
 import '../custom';
 
-import { PageBackground as PageBackground } from './components/page-background/page-background';
 
-interface HTMLPageBackgroundElement extends PageBackground, HTMLElement {
-}
-declare var HTMLPageBackgroundElement: {
-  prototype: HTMLPageBackgroundElement;
-  new (): HTMLPageBackgroundElement;
-};
+import {
+  PageBackground as PageBackground
+} from './components/page-background/page-background';
+
 declare global {
+  interface HTMLPageBackgroundElement extends PageBackground, HTMLElement {
+  }
+  var HTMLPageBackgroundElement: {
+    prototype: HTMLPageBackgroundElement;
+    new (): HTMLPageBackgroundElement;
+  };
   interface HTMLElementTagNameMap {
-      "page-background": HTMLPageBackgroundElement;
+    "page-background": HTMLPageBackgroundElement;
   }
   interface ElementTagNameMap {
-      "page-background": HTMLPageBackgroundElement;
+    "page-background": HTMLPageBackgroundElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "page-background": JSXElements.PageBackgroundAttributes;
-      }
+    interface IntrinsicElements {
+      "page-background": JSXElements.PageBackgroundAttributes;
+    }
   }
   namespace JSXElements {
-      export interface PageBackgroundAttributes extends HTMLAttributes {
-        
-          type?: any,
-          value?: any,
-          key?: any,
-          gradient?: any
-      }
+    export interface PageBackgroundAttributes extends HTMLAttributes {
+      gradient?: any;
+      key?: any;
+      type?: string;
+      value?: string;
+    }
   }
 }
 
-import { PageLayout as PageLayout } from './components/page-layout/page-layout';
 
-interface HTMLPageLayoutElement extends PageLayout, HTMLElement {
-}
-declare var HTMLPageLayoutElement: {
-  prototype: HTMLPageLayoutElement;
-  new (): HTMLPageLayoutElement;
-};
+import {
+  PageLayout as PageLayout
+} from './components/page-layout/page-layout';
+
 declare global {
+  interface HTMLPageLayoutElement extends PageLayout, HTMLElement {
+  }
+  var HTMLPageLayoutElement: {
+    prototype: HTMLPageLayoutElement;
+    new (): HTMLPageLayoutElement;
+  };
   interface HTMLElementTagNameMap {
-      "page-layout": HTMLPageLayoutElement;
+    "page-layout": HTMLPageLayoutElement;
   }
   interface ElementTagNameMap {
-      "page-layout": HTMLPageLayoutElement;
+    "page-layout": HTMLPageLayoutElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "page-layout": JSXElements.PageLayoutAttributes;
-      }
+    interface IntrinsicElements {
+      "page-layout": JSXElements.PageLayoutAttributes;
+    }
   }
   namespace JSXElements {
-      export interface PageLayoutAttributes extends HTMLAttributes {
-        
-          direction?: any,
-          width?: any
-      }
+    export interface PageLayoutAttributes extends HTMLAttributes {
+      direction?: string;
+      width?: string;
+    }
   }
 }
 

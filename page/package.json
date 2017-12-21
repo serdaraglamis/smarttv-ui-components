@@ -2,8 +2,8 @@
   "name": "page_components",
   "version": "0.0.1",
   "description": "DOGAN TV HOLDING Custom Web Components Page",
-  "main": "dist/collection/index.js",
-  "types": "dist/collection/index.d.ts",
+  "main": "dist/page_components.js",
+  "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"
@@ -22,9 +22,7 @@
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",
-    "@stencil/utils": "latest",
-    "@types/jest": "^21.1.1",
-    "jest": "^21.2.1"
+    "@stencil/utils": "latest"
   },
   "repository": {
     "type": "git",
