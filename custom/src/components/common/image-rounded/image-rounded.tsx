@@ -20,7 +20,7 @@ export class ImageRounded {
   };
 
   componentWillLoad() {
-    console.log('The component is about to be rendered', this.image);
+    // console.log('The component is about to be rendered', this.image);
   }
 
 
