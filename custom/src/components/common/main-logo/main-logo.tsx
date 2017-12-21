@@ -12,7 +12,7 @@ export class MainLogo {
   @Prop() image: string;
 
   componentWillLoad() {
-    console.log('The component is about to be rendered', this.image);
+
   }
 
 

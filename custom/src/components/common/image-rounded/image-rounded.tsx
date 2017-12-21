@@ -6,9 +6,6 @@ import {Component, Prop} from '@stencil/core';
 })
 export class ImageRounded {
 
-  /* @Prop() data: {
-
-   };*/
   @Prop() image: string;
   @Prop() config: {
     width?: number,
@@ -20,7 +17,6 @@ export class ImageRounded {
   };
 
   componentWillLoad() {
-    // console.log('The component is about to be rendered', this.image);
   }
 
 

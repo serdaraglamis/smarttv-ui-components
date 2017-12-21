@@ -5,16 +5,11 @@ exports.config = {
     {
       components: [
         'image-rounded',
-        'main-logo',
-        'loading-element',
-        'list-play-card'
+        'main-logo'
       ]
     }
   ],
   collections: [
-    {
-      name: '../page'
-    }
   ],
   copy: [
     {

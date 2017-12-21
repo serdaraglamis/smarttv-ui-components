@@ -4,8 +4,6 @@
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
 
-import '../page';
-
 import { ImageRounded as ImageRounded } from './components/common/image-rounded/image-rounded';
 
 interface HTMLImageRoundedElement extends ImageRounded, HTMLElement {
@@ -31,67 +29,6 @@ declare global {
         
           image?: any,
           config?: any
-      }
-  }
-}
-
-import { ListPlayCard as ListPlayCard } from './components/common/list-play-card/list-play-card';
-
-interface HTMLListPlayCardElement extends ListPlayCard, HTMLElement {
-}
-declare var HTMLListPlayCardElement: {
-  prototype: HTMLListPlayCardElement;
-  new (): HTMLListPlayCardElement;
-};
-declare global {
-  interface HTMLElementTagNameMap {
-      "list-play-card": HTMLListPlayCardElement;
-  }
-  interface ElementTagNameMap {
-      "list-play-card": HTMLListPlayCardElement;
-  }
-  namespace JSX {
-      interface IntrinsicElements {
-          "list-play-card": JSXElements.ListPlayCardAttributes;
-      }
-  }
-  namespace JSXElements {
-      export interface ListPlayCardAttributes extends HTMLAttributes {
-        
-          image?: any,
-          sectionTitle?: any,
-          currentFocus?: any,
-          data?: any,
-          isasync?: any,
-          async?: any,
-          key?: any
-      }
-  }
-}
-
-import { LoadingElement as LoadingElement } from './components/common/loading/loading-element';
-
-interface HTMLLoadingElementElement extends LoadingElement, HTMLElement {
-}
-declare var HTMLLoadingElementElement: {
-  prototype: HTMLLoadingElementElement;
-  new (): HTMLLoadingElementElement;
-};
-declare global {
-  interface HTMLElementTagNameMap {
-      "loading-element": HTMLLoadingElementElement;
-  }
-  interface ElementTagNameMap {
-      "loading-element": HTMLLoadingElementElement;
-  }
-  namespace JSX {
-      interface IntrinsicElements {
-          "loading-element": JSXElements.LoadingElementAttributes;
-      }
-  }
-  namespace JSXElements {
-      export interface LoadingElementAttributes extends HTMLAttributes {
-        
       }
   }
 }
