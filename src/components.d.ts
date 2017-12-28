@@ -29,15 +29,8 @@ declare global {
   }
   namespace JSXElements {
     export interface ImageRoundedAttributes extends HTMLAttributes {
-      config?: {
-    width?: number,
-    height?: number,
-    border?: {
-      color?: string,
-      padding?: number
-    }
-  };
-      image?: string;
+      config?: any;
+      image?: any;
     }
   }
 }
