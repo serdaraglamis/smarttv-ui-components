@@ -6,15 +6,19 @@ import {Component, Prop} from '@stencil/core';
 })
 export class ImageRounded {
 
-  @Prop() image: string;
-  @Prop() config: {
-    width?: number,
-    height?: number,
-    border?: {
-      color?: string,
-      padding?: number
-    }
-  };
+  @Prop() image: any;
+
+  /*  @Prop() config: {
+      width?: number,
+      height?: number,
+      border?: {
+        color?: string,
+        padding?: number
+      }
+    };*/
+
+  @Prop() config: any;
+
 
   componentWillLoad() {
   }
@@ -30,7 +34,7 @@ export class ImageRounded {
     let borderStyle = {
       width: `${this.config.width}px`,
       height: `${this.config.height || this.config.width}px`,
-      border: `1px solid ${this.config.border && this.config.border.color ? this.config.border.color :  'white'}`,
+      border: `1px solid ${this.config.border && this.config.border.color ? this.config.border.color : 'white'}`,
       borderRadius: `${this.config.width}px`,
       padding: `${this.config.border && this.config.border.padding ? this.config.border.padding : 5}px`,
       display: 'inline-block'
